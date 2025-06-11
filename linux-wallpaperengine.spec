@@ -51,6 +51,9 @@ DESTDIR="%{buildroot}" cmake --install build
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Wed Jun 11 2025 Moon 0.0.1-1
+- new package built with tito
+
 
 
 
