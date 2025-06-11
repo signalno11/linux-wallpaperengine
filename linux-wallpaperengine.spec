@@ -1,6 +1,6 @@
 Name: linux-wallpaperengine
-Version: 0.0.0
-Release: 0%{?dist}
+Version: 0.0.1
+Release: 1%{?dist}
 License: GPLv3
 Summary: Wallpaper engine on Linux
 Url: https://github.com/Almamu/linux-wallpaperengine
