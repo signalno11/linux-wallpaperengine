@@ -12,7 +12,7 @@ BuildRequires: glm-devel
 BuildRequires: SDL2-devel
 BuildRequires: gcc
 BuildRequires: gcc-c++
-BuildRequires: wayland-protocols-devel
+BuildRequires: wayland-devel
 
 Requires: ffmpeg
 Requires: freeglut
