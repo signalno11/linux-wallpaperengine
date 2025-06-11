@@ -13,6 +13,12 @@ BuildRequires: SDL2-devel
 BuildRequires: gcc
 BuildRequires: gcc-c++
 BuildRequires: wayland-devel
+BuildRequires: libX11-devel
+BuildRequires: glew-devel
+BuildRequires: freeglut-devel
+BuildRequires: zlib-ng-compat-devel
+BuildRequires: mpv-devel
+BuildRequires: lz4-devel
 
 Requires: ffmpeg
 Requires: freeglut
