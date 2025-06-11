@@ -10,6 +10,9 @@ BuildRequires: cmake
 BuildRequires: git
 BuildRequires: glm-devel
 BuildRequires: SDL2-devel
+BuildRequires: gcc
+BuildRequires: gcc-c++
+BuildRequires: wayland-protocols-devel
 
 Requires: ffmpeg
 Requires: freeglut
@@ -29,7 +32,7 @@ Bring Wallpaper Engine-style live wallpapers to Linux! This project allows you t
 %build
 ls
 ls "%{_sourcedir}"
-cmake -B build -S "." -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX="/usr/bin/%{name}" -DCMAKE_CXX_FLAGS="-ffat-lto-objects -Wno-builtin-macro-redefined" -DCMAKE_C_FLAGS="-Wno-builtin-macro-redefined"
+cmake -B build -S . -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX="/usr/bin/%{name}" -DCMAKE_CXX_FLAGS="-ffat-lto-objects -Wno-builtin-macro-redefined" -DCMAKE_C_FLAGS="-Wno-builtin-macro-redefined"
 cmake --build build
 
 %install
