@@ -27,7 +27,7 @@ Bring Wallpaper Engine-style live wallpapers to Linux! This project allows you t
 %autosetup
 
 %build
-make -B build -S "%{name}" -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX="/usr/bin/%{name}" -DCMAKE_CXX_FLAGS="-ffat-lto-objects -Wno-builtin-macro-redefined" -DCMAKE_C_FLAGS="-Wno-builtin-macro-redefined"
+cmake -B build -S "%{name}" -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX="/usr/bin/%{name}" -DCMAKE_CXX_FLAGS="-ffat-lto-objects -Wno-builtin-macro-redefined" -DCMAKE_C_FLAGS="-Wno-builtin-macro-redefined"
 cmake --build build
 
 %install
